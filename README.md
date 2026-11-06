@@ -12,6 +12,22 @@ in which they existed.  A statement keeps its source's own ID where the
 source gives one, so that a later build can be compared with an earlier one
 statement by statement.
 
+## Release 2026-11-05.1
+
+This release has only a new GOV file, and the program takes the Wikidata
+file from release 2026-11-05.  GOV records the United Nations
+(`object_1285561`) as a "confederation" that 31 countries have been part of
+since 1945, and no address includes it, so the build leaves out the object
+and every statement that names it as a parent.
+
+| File | Source | Data as of | Places | Size | Unpacked | License |
+|---|---|---|---|---|---|---|
+| `gov.sqlite.xz` | GOV's web service | 3 Nov 2026 | 1,888 | 308 KB | 1.2 MB | CC BY-SA 4.0 |
+
+```
+ee1b225845ebdfb4e2ffa7e70ef27725527fab55cbf82301d7927e905deb2c80  gov.sqlite.xz
+```
+
 ## Release 2026-11-05
 
 | File | Source | Data as of | Places | Size | Unpacked | License |
