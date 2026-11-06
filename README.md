@@ -12,6 +12,21 @@ in which they existed.  A statement keeps its source's own ID where the
 source gives one, so that a later build can be compared with an earlier one
 statement by statement.
 
+## Release 2026-11-05.2
+
+This release also has only a new GOV file.  It leaves out the League of
+Nations (`object_320423`) and the European Union with the communities
+before it (`object_1176980`) as well as the United Nations, since GOV puts
+each of these organizations above its member states in the same way.
+
+| File | Source | Data as of | Places | Size | Unpacked | License |
+|---|---|---|---|---|---|---|
+| `gov.sqlite.xz` | GOV's web service | 3 Nov 2026 | 1,886 | 307 KB | 1.2 MB | CC BY-SA 4.0 |
+
+```
+2f2efecf4b2dc78982a428c12c75c3d76a45317668835ebcfc3e01c3e7da9218  gov.sqlite.xz
+```
+
 ## Release 2026-11-05.1
 
 This release has only a new GOV file, and the program takes the Wikidata
