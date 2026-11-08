@@ -12,6 +12,30 @@ in which they existed.  A statement keeps its source's own ID where the
 source gives one, so that a later build can be compared with an earlier one
 statement by statement.
 
+## Release 2026-11-07
+
+This release has the files of the releases 2026-11-05 (Wikidata) and
+2026-11-05.2 (GOV) with new indexes of their names and sounds, which make
+them files of format 2, the SQLite `user_version` of each file.  Before a
+name is reduced, it is written in Latin letters by
+[anyascii](https://github.com/anyascii/anyascii), and its sounds are the
+Metaphone of [jellyfish](https://github.com/jamesturk/jellyfish).  The
+files of format 1 had RootsMagic's reduction, which dropped every letter
+outside Latin-1, so that a name in Cyrillic, Greek, or Chinese had no key.
+The names and every other table are unchanged.  The program reads only
+files of format 2, so the files of the earlier releases are no longer
+downloaded.
+
+| File | Source | Data as of | Places | Size | Unpacked | License |
+|---|---|---|---|---|---|---|
+| `wikidata.sqlite.xz` | Wikidata's JSON dump | 27 Oct 2026 | 4,739,486 | 1.04 GB | 3.75 GB | CC0 1.0 |
+| `gov.sqlite.xz` | GOV's web service | 3 Nov 2026 | 1,886 | 307 KB | 1.2 MB | CC BY-SA 4.0 |
+
+```
+212857a144823ca51eaa4a67812e1db428c18f425055d490a15d5e444d39ddf4  wikidata.sqlite.xz
+a1c1b343141faabf0e2890e99946c57bc38b7ab14e109c89d67ad1f8f297263e  gov.sqlite.xz
+```
+
 ## Release 2026-11-05.2
 
 This release also has only a new GOV file.  It leaves out the League of
